@@ -21,4 +21,8 @@ class Enemy(pygame.sprite.Sprite):
         self.speed = 2
 
     def update(self):
-        print("'Update me,' says " + self.name)
+      self.rect.x += random.randint(-1,1)
+      self.rect.y += random.randint(-1,1)
+      
+        ##print("'Update me,' says " + self.name)
+        ##Alter the update method for the Enemy class so it changes both the x and y coordinates of its internal rectangle object by a random value: -1, 0, or 1.
